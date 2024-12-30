@@ -1,21 +1,21 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-    firstName: 'Selene',
-    lastName:  'Yu',
+    firstName: 'John',
+    lastName: 'Asemota',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role:      'Design Engineer',
-    avatar:    '/images/avatar.jpg',
-    location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+    role: 'Software Engineer',
+    avatar: '/images/avatar.jpg',
+    location: 'Africa/Lagos',
+    languages: ['English', 'Bini', 'Yoruba']
 }
 
 const newsletter = {
     display: true,
-    title: <>Subscribe to {person.firstName}'s Newsletter</>,
-    description: <>I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering.</>
+    title: <>Start a project with {person.firstName}</>,
+    description: <>Interested in collaborating? Let’s schedule a time to connect—I’ll take care of the coffee!</>
 }
 
 const social = [
@@ -24,12 +24,12 @@ const social = [
     {
         name: 'GitHub',
         icon: 'github',
-        link: 'https://github.com/once-ui-system/nextjs-starter',
+        link: 'https://github.com/jawnchuks',
     },
     {
         name: 'LinkedIn',
         icon: 'linkedin',
-        link: 'https://www.linkedin.com/company/once-ui/',
+        link: 'https://www.linkedin.com/in/jawnchuks/',
     },
     {
         name: 'X',
@@ -39,7 +39,7 @@ const social = [
     {
         name: 'Email',
         icon: 'email',
-        link: 'mailto:example@gmail.com',
+        link: 'mailto:jawnchuks@gmail.com',
     },
 ]
 
@@ -47,8 +47,8 @@ const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Design engineer and builder</>,
-    subline: <>I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
+    headline: <>Software engineer and a cool guy</>,
+    subline: <>I'm John, a software engineer at <InlineCode>VKM</InlineCode>, passionate about crafting elegant solutions to complex problems, contributing to open-source, and building stunning websites with seamless user experiences.<br /> </>
 }
 
 const about = {
@@ -57,7 +57,7 @@ const about = {
     description: `Meet ${person.name}, ${person.role} from ${person.location}`,
     tableOfContent: {
         display: true,
-        subItems: true
+        subItems: false
     },
     avatar: {
         display: true
@@ -69,21 +69,22 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Selene is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>
+        description: <>I'm John, a Nigerian based software engineer working at VKM. I enjoy finding smart ways to solve tough problems with software. My work involves designing systems that can handle a lot of users, improving backend performance, and creating strong APIs. I also focus on making sure the software runs smoothly and is easy for people to use. I love contributing to open-source projects and taking on challenges that require deep thinking and careful planning.</>
     },
     work: {
-        display: true, // set to false to hide this section
+        display: true,
         title: 'Work Experience',
         experiences: [
             {
-                company: 'FLY',
-                timeframe: '2022 - Present',
-                role: 'Senior Design Engineer',
+                company: 'VKM',
+                timeframe: '2021 - Present',
+                role: 'Software Engineer',
                 achievements: [
-                    <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
-                    <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
+                    <>Designed and developed scalable management systems for internal and external stakeholders.</>,
+                    <>Built and maintained a robust design system to ensure consistency and reusability across multiple applications.</>,
+                    <>Led data cleaning efforts to ensure accurate and reliable datasets for analytics and reporting</>
                 ],
-                images: [ // optional: leave the array empty if you don't want to display images
+                images: [
                     {
                         src: '/images/projects/project-01/cover-01.jpg',
                         alt: 'Once UI Project',
@@ -93,67 +94,134 @@ const about = {
                 ]
             },
             {
-                company: 'Creativ3',
-                timeframe: '2018 - 2022',
-                role: 'Lead Designer',
+                company: 'EazyBillz',
+                timeframe: '2023 - 2024',
+                role: 'Lead Frontend Developer',
                 achievements: [
-                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
-                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
+                    <>Built and optimized frontend architectures for high-performance and scalable web applications</>,
+                    <>Spearheaded the development of an intuitive design system, enabling a consistent and efficient user experience across all applications.</>,
+                    <>Collaborated with cross-functional teams to implement new features and ensure alignment with product goals.</>
                 ],
-                images: [ ]
+                images: []
+            },
+            {
+                company: 'Freelance',
+                timeframe: '2019 - 2024',
+                role: 'Self-Employed Software Developer',
+                achievements: [
+                    <>Designed and implemented custom systems for startups, individual clients, and established businesses.</>,
+                    <>Built user-friendly e-commerce platforms tailored to client specifications, enabling seamless online transactions.</>,
+                    <>Delivered scalable solutions for end-users, including CRM tools and task management systems.</>
+                ],
+                images: []
             }
         ]
     },
     studies: {
-        display: true, // set to false to hide this section
+        display: true,
         title: 'Studies',
         institutions: [
             {
-                name: 'University of Jakarta',
-                description: <>Studied software engineering.</>,
+                name: 'Landmark University',
+                description: <>Studied chemical engineering.</>,
             },
             {
-                name: 'Build the Future',
-                description: <>Studied online marketing and personal branding.</>,
+                name: 'HiiT',
+                description: <>Enrolled in a web development bootcamp.</>,
             }
         ]
     },
     technical: {
-        display: true, // set to false to hide this section
-        title: 'Technical skills',
+        display: true,
+        title: 'Technical Skills',
         skills: [
             {
+                title: 'Python',
+                description: <>Experienced in using Python for backend development, automation scripts, and data analysis. I also work with frameworks such as Django and Flask to build robust systems.</>,
+                images: []
+            },
+            {
+                title: 'React Native',
+                description: <>Proficient in React Native for building cross-platform mobile applications, delivering seamless user experiences across iOS and Android devices.</>,
+                images: []
+            },
+            {
+                title: 'ODK',
+                description: <>Skilled in using ODK (Open Data Kit) for data collection and management, particularly in field-based environments and research projects.</>,
+                images: []
+            },
+            {
+                title: 'R Programming & Excel',
+                description: <>Experienced with R programming and Excel for data analysis, creating visualizations, and performing statistical modeling to derive insights.</>,
+                images: []
+            },
+            {
                 title: 'Figma',
-                description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-                images: [
-                    {
-                        src: '/images/projects/project-01/cover-02.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                    {
-                        src: '/images/projects/project-01/cover-03.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                ]
+                description: <>Proficient in using Figma for designing user interfaces and prototypes. I ensure that my designs are user-friendly and work seamlessly with development teams for efficient implementation.</>,
+                images: []
             },
             {
                 title: 'Next.js',
-                description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-                images: [
-                    {
-                        src: '/images/projects/project-01/cover-04.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                ]
-            }
+                description: <>Skilled in building modern, fast-loading web applications with Next.js, utilizing features like server-side rendering, API routes, and static site generation for optimal performance.</>,
+                images: []
+            },
+            {
+                title: 'React.js',
+                description: <>Experienced in using React.js to build dynamic, interactive web applications with reusable components. I manage state effectively with tools such as Redux and Context API.</>,
+                images: []
+            },
+            {
+                title: 'Node.js',
+                description: <>Proficient in using Node.js for backend services and API development, with experience in frameworks like Express.js and integrating databases for data-driven applications.</>,
+                images: []
+            },
+            {
+                title: 'TypeScript',
+                description: <>Skilled in writing scalable and reliable JavaScript applications with TypeScript, ensuring better code quality and minimizing errors.</>,
+                images: []
+            },
+            {
+                title: 'Database Management',
+                description: <>Experienced in working with relational and NoSQL databases, including MySQL, PostgreSQL, and MongoDB. I focus on designing efficient schemas and optimizing database performance.</>,
+                images: []
+            },
+            {
+                title: 'Version Control & CI/CD',
+                description: <>Proficient in using Git for version control and setting up CI/CD pipelines with tools such as GitHub Actions and Jenkins to streamline deployments.</>,
+                images: []
+            },
+            {
+                title: 'Cloud Services',
+                description: <>Experienced in deploying and managing applications on cloud platforms like AWS (EC2, S3, Lambda) and using Vercel for frontend hosting.</>,
+                images: []
+            },
+            {
+                title: 'Automation & Scripting',
+                description: <>Skilled in writing automation scripts using Python and Bash for handling repetitive tasks, cleaning data, and web scraping efficiently.</>,
+                images: []
+            },
+            {
+                title: 'Testing & Debugging',
+                description: <>Experienced in testing and debugging software using tools like Jest, Mocha, and Selenium to ensure the stability and functionality of applications before deployment.</>,
+                images: []
+            },
         ]
     }
+
+
+
+    // {
+    //     title: 'Testing & Debugging',
+    //     description: <>I test and debug software effectively using tools like Jest, Mocha, and Selenium to ensure everything works as expected before deployment.</>,
+    //     images: [
+    //         // {
+    //         //     src: '/images/projects/testing/cover-01.jpg',
+    //         //     alt: 'Testing project example',
+    //         //     width: 16,
+    //         //     height: 9
+    //         // },
+    //     ]
+    // },
 }
 
 const blog = {
@@ -178,73 +246,73 @@ const gallery = {
     description: `A photo collection by ${person.name}`,
     // Images from https://pexels.com
     images: [
-        { 
-            src: '/images/gallery/img-01.jpg', 
+        {
+            src: '/images/gallery/img-01.jpg',
             alt: 'image',
             orientation: 'vertical'
         },
-        { 
-            src: '/images/gallery/img-02.jpg', 
+        {
+            src: '/images/gallery/img-02.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-03.jpg', 
+        {
+            src: '/images/gallery/img-03.jpg',
             alt: 'image',
             orientation: 'vertical'
         },
-        { 
-            src: '/images/gallery/img-04.jpg', 
+        {
+            src: '/images/gallery/img-04.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-05.jpg', 
+        {
+            src: '/images/gallery/img-05.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-06.jpg', 
+        {
+            src: '/images/gallery/img-06.jpg',
             alt: 'image',
             orientation: 'vertical'
         },
-        { 
-            src: '/images/gallery/img-07.jpg', 
+        {
+            src: '/images/gallery/img-07.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-08.jpg', 
+        {
+            src: '/images/gallery/img-08.jpg',
             alt: 'image',
             orientation: 'vertical'
         },
-        { 
-            src: '/images/gallery/img-09.jpg', 
+        {
+            src: '/images/gallery/img-09.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-10.jpg', 
+        {
+            src: '/images/gallery/img-10.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-11.jpg', 
+        {
+            src: '/images/gallery/img-11.jpg',
             alt: 'image',
             orientation: 'vertical'
         },
-        { 
-            src: '/images/gallery/img-12.jpg', 
+        {
+            src: '/images/gallery/img-12.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-13.jpg', 
+        {
+            src: '/images/gallery/img-13.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-14.jpg', 
+        {
+            src: '/images/gallery/img-14.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },
