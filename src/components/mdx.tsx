@@ -1,4 +1,6 @@
+// @ts-ignore
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+// @ts-ignore
 import { solarizedDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { MDXRemote, MDXRemoteProps } from "next-mdx-remote/rsc";
 import React, { ReactNode } from "react";
