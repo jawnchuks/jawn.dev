@@ -6,7 +6,7 @@ import classNames from "classnames";
 import { Footer, Header, RouteGuard } from "@/components";
 import { baseURL, effects, style } from "@/app/resources";
 
-import { Inter } from "next/font/google";
+import { Sora } from "next/font/google";
 import { Source_Code_Pro } from "next/font/google";
 
 import { NextIntlClientProvider } from "next-intl";
@@ -54,7 +54,7 @@ export async function generateMetadata({
   };
 }
 
-const primary = Inter({
+const primary = Sora({
   variable: "--font-primary",
   subsets: ["latin"],
   display: "swap",
